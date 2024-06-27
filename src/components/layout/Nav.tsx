@@ -1,28 +1,14 @@
 import Link from "next/link";
 import styles from "./Nav.module.css"
+import { gnb_nav } from "@/util/nav";
 
 const Nav = () => {
 
-    const nav_list = [
-        {
-            title: 'Layout',
-            list: [
-                {
-                    name: 'Grid',
-                    path: '',
-                },
-                {
-                    name: 'Flex',
-                    path: '',
-                },
-                
-            ]
-        }
-    ]
+
 
     return (
         <nav className={styles.container}>
-            {nav_list.map(({
+            {gnb_nav.map(({
                 title, list
             }) => (
             <article key={`nav_${title}`}>
@@ -43,3 +29,4 @@ const Nav = () => {
 }
 
 export default Nav;
+
