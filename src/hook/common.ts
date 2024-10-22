@@ -1,7 +1,7 @@
 import { setTestValue } from "@/redux/common";
 import { useDispatch, useSelector } from "react-redux";
 
-export const usetextValue = ():[
+export const useTextValue = ():[
     string,
     (val:string) => void
 ] => {
